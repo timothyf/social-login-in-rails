@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
       :recoverable, :rememberable, :trackable, :validatable, :omniauthable
   validates_presence_of :email
-  mount_uploader :image, ImageUploader
+  #mount_uploader :image, ImageUploader
   has_many :authorizations
 
   def self.new_with_session(params,session)
@@ -28,6 +28,8 @@ class User < ActiveRecord::Base
        user.password = Devise.friendly_token[0,10]
        user.name = auth.info.name
        user.email = auth.info.email
+       puts '########################### auth.info.image = ' + auth.info.image
+       user.image = auth.info.image
        auth.provider == "twitter" ?  user.save(:validate => false) :  user.save
      end
      authorization.username = auth.info.nickname
