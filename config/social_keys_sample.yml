@@ -2,8 +2,8 @@ development:
   facebook_key: "YOUR_KEY"
   facebook_secret: "YOUR_SECRET"
 
-  twitter_key: "mjD6tqj1iqYfHQBPu2JkOr767"
-  twitter_secret: "bneIcjiz5bg6hrcu04e6mPeJfjjfUCrVwrzXXra4yXrmGBItyW"
+  twitter_key: "YOUR_KEY"
+  twitter_secret: "YOUR_SECRET"
 
   github_key: "YOUR_KEY"
   github_secret: "YOUR_SECRET"
@@ -18,8 +18,8 @@ production:
   facebook_key: "YOUR_KEY"
   facebook_secret: "YOUR_SECRET"
 
-  twitter_key: "mjD6tqj1iqYfHQBPu2JkOr767"
-  twitter_secret: "bneIcjiz5bg6hrcu04e6mPeJfjjfUCrVwrzXXra4yXrmGBItyW"
+  twitter_key: "YOUR_KEY"
+  twitter_secret: "YOUR_SECRET"
 
   github_key: "YOUR_KEY"
   github_secret: "YOUR_SECRET"
